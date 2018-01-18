@@ -1,0 +1,13 @@
+
+
+
+enum RAY_COLLISION_TYPES
+{
+	NONE = 0,
+	SIGHT,
+	SHOOT,
+	INTERACTION
+};
+
+
+

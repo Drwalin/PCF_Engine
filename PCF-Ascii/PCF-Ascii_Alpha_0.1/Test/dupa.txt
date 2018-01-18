@@ -1,0 +1,16 @@
+ Wolumin w stacji C nie ma etykiety.
+ Numer seryjny woluminu: 0254-C681
+
+ Katalog: C:\programowanie\CPP\System(Allegro)\Test
+
+2016-07-17  08:43    <DIR>          .
+2016-07-17  08:43    <DIR>          ..
+2016-07-17  08:43                 0 dupa.txt
+2016-07-16  22:57               337 fstream.cpp
+2016-07-16  22:57           475ÿ911 fstream.exe
+2016-07-16  19:05               130 getch.cpp
+2016-07-16  19:05           475ÿ129 getch.exe
+2016-07-17  08:43             1ÿ105 system.cpp
+2016-07-17  08:43           495ÿ928 system.exe
+               7 plik(¢w)          1ÿ448ÿ540 bajt¢w
+               2 katalog(¢w)  276ÿ297ÿ510ÿ912 bajt¢w wolnych

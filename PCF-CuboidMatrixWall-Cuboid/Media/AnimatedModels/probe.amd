@@ -1,0 +1,5 @@
+FramesNumber = 3
+0 = "probe\name1.obj"
+1 = "probe\name2.obj"
+2 = "probe\name3.obj"
+Texture = "probe\texture.bmpx"

@@ -1,0 +1,8 @@
+
+
+TData\Textures\texture1.bmpx
+
+M0Data\Models\Human2\_Human2.txt
+M1Data\Models\Chest1\Chest1.txt
+
+o 5.0 5.85 5.0 75.0 0.85 0 0    1 1 1 1

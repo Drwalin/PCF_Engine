@@ -1,0 +1,48 @@
+Project:
+	Cuboid Walls by Matrix Translate
+
+Alpha 0.0
+{
+Begin at 28.07.2016r.
+
+	- arrangement source code style
+	- Idea how to use engine, and how does it work's
+	- Arrangement classes and folders
+
+29,07.2016r.
+
+	- Methods:
+		Engine::Renderer()
+		Engine::PhisicLoop()
+		Engine::Reshape( int width, int height )
+		Engine::FrameFunction( int arg )
+		Engine::Init( int * argc, char *argv[] )
+		Engine::Engine()
+		Engine::~Engine()
+	- First's macros
+
+30.07.2016r.
+
+	- Methods:
+		Engine::Add( int arg, ... )
+
+02.08.2016r.
+
+	- Methods (into my "VMatrix" library):
+		VMatrix::GetReverse()
+		VMatrix::GetVertexBack();
+
+04.10.2016r. (Alpha-0.0d)
+
+	- New engine organization
+}
+
+
+
+
+
+
+
+
+
+

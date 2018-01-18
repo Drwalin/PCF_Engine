@@ -1,0 +1,423 @@
+
+
+
+Libraries:
+	cmath
+	cstdarg
+	cstdio
+	cstdlib
+	ctime
+	fstream
+	iostream
+	limits
+	string
+	vector
+	
+Windows specific C libraries:
+	Mmsystem.h
+	process.h
+	windows.h
+	
+OpenGL libraries:
+	glut.h
+	glext.h
+	glx.h
+	
+IrrKlang library:
+	irrKlang.h
+	
+LodePNG library:
+	LodePNG
+	
+My own libraries:
+	ScriptsDLL.cpp
+	Keyboards.cpp
+	FontDisplay.cpp
+	VMatrix.cpp
+	Vector.cpp
+	MaxMin.cpp
+	GetSthFromString.cpp
+	ConvertMSDNKeyCode.cpp
+	
+	
+	
+Macros:
+	TEXTURE_UNLOADED
+	TEXTURE_LOADED
+	
+	COLLISION_IS
+	COLLISION_NO
+	COLLISION_WITH_TRIANGLE
+	COLLISION_WITH_OBJECT
+	
+	PXTHREAD_CLEAR
+	PXTHREAD_INWORK
+	
+	CWBMT_FRAMEINMS
+	
+	
+	
+Type definitions:
+	FunctionVoidFloat
+	FunctionVoidVoid
+	FunctionVoidInt
+	FunctionVoidIntInt
+	
+	PFNGLBINDBUFFERPROC
+	PFNGLDELETEBUFFERSPROC
+	PFNGLGENBUFFERSPROC
+	PFNGLBUFFERDATAPROC
+	PFNGLCLIENTACTIVETEXTUREPROC
+	
+	
+	
+Global functions:
+	glGenBuffers
+	glBindBuffer
+	glBufferData
+	glDeleteBuffers
+	glClientActiveTexture
+	
+	Reshape__
+	Renderer__
+	FrameFunction__
+	PhysicLoop__
+	PhysicObjectCollision__
+	
+	SetEngineInstantiation
+	
+	
+Global pointers:
+	engineInstantiation
+	soundEngineInstantiation
+	
+	
+	
+Global values:
+	frames_physic_loop
+	cool_down_physic_fps
+	GlobalPhisicTimeScale
+	
+	
+	
+Classes:
+	LightningVertex
+	Lightning
+	
+	ONEPointParticle
+	PointParticle
+	
+	Texture
+	
+	TriangleGX
+	VBOvertexCollored
+	VBOcollored
+	VBOvertexTexture
+	VBOtextured
+	StaticGraphicModel
+	
+	AABB
+	OBB
+	Sphere
+	
+	PhysicModelStatic
+	
+	TrianglePX
+	
+	Collision
+	
+	ColliderTerrain
+	ColliderObjects
+	
+	Map
+	
+	OneSample
+	SoundSampleSources
+	SoundEngine
+	
+	Engine
+	
+	
+	
+	
+	
+	
+	
+Classes methods definition:
+
+	LightningVertex:
+		inline void DrawChildren( int number, bool begin );
+		LightningVertex();
+		~LightningVertex();
+		
+	Lightning:
+		inline void Draw();
+		inline void Update( float FrameTime );
+		inline void Set( Vector begin_, Vector end_, float beginWidth_, float EndWidth_, float r1_, float g1_, float b1_, float r2_, float g2_, float b2_, int segments_, float branch_, float branchDensity_, float beginTime, float endTime );
+		Lightning();
+		~Lightning();
+	
+	ONEPointParticle:
+		inline void Update( float time );
+		ONEPointParticle();
+		~ONEPointParticle();
+	
+	PointParticle:
+		inline void Update( float time );
+		inline void AddParticle( Vector origin, float originrandomization, Vector vel, Vector accelerate, float randomization, unsigned char r,unsigned char g, unsigned char b, unsigned char rrand,unsigned char grand, unsigned char brand, float lifetime, float randomizationlifetime, int count );
+		inline void Draw();
+		PointParticle();
+		~PointParticle();
+	
+	Texture:
+		inline int LoadInit( char * name );
+		inline int LoadInit( char * name, int type );
+		inline unsigned int GetID();
+		inline void Bind();
+		inline void Delete();
+		inline void GetPixel( unsigned int x, unsigned int y, unsigned char & r, unsigned char & g, unsigned char & b );
+		inline void SetPixel( unsigned int x, unsigned int y, unsigned char r, unsigned char g, unsigned char b );
+		Texture();
+		~Texture();
+	
+	TriangleGX:
+		inline void Draw();
+		inline void SetTexture( unsigned int src );
+		TriangleGX();
+		~TriangleGX();
+	
+	VBOvertexCollored:
+		VBOvertexCollored();
+		~VBOvertexCollored();
+	
+	VBOcollored:
+		inline void AddVertex( float x, float y, float z, unsigned char r, unsigned char g, unsigned char b, unsigned char a );
+		inline void AddTriangle( unsigned int a, unsigned int b, unsigned int c );
+		inline void Generate();
+		inline void Draw();
+		inline void DrawBy( unsigned int begin, unsigned int count );
+		inline void SetTexture( char * filename );
+		inline void Delete();
+		VBOcollored();
+		~VBOcollored();
+	
+	VBOvertexTexture:
+		VBOvertexTexture();
+		~VBOvertexTexture();
+	
+	VBOtextured:
+		inline void AddVertex( float x, float y, float z, float texcoordx, float texcoordy );
+		inline void AddTriangle( unsigned int a, unsigned int b, unsigned int c );
+		inline void Generate();
+		inline void Draw();
+		inline void DrawBy( unsigned int begin, unsigned int count );
+		inline void SetTexture( char * filename, int type );
+		inline void Delete();
+		VBOtextured();
+		~VBOtextured();
+	
+	StaticGraphicModel:
+		inline int LoadModel( char * src, Vector scale_src );
+		inline void Init( char * modelpath, char * texturepath, int type, Vector scale );
+		inline void Draw();
+		StaticGraphicModel();
+		~StaticGraphicModel();
+	
+	AABB:
+		inline Vector GetVertex( int id );
+		inline Vector MaxWithVector( Vector dst );
+		inline Vector ClosesPoint( Vector dst );
+		AABB();
+		~AABB();
+	
+	OBB:
+		OBB();
+		~OBB();
+	
+	Sphere:
+		inline Vector MaxWithVector( Vector dst );
+		inline Vector ClosesPoint( Vector dst );
+		Sphere();
+		~Sphere();
+	
+	PhysicModelStatic:
+		inline float GetMass();
+		inline Vector GetMin();
+		inline Vector GetMax();
+		inline float GetMinX();
+		inline float GetMinY();
+		inline float GetMinZ();
+		inline float GetMaxX();
+		inline float GetMaxY();
+		inline float GetMaxZ();
+		inline void UpdatePossition( float time );
+		inline void UpdateVelocity( float time );
+		inline void IdentityForce();
+		inline void IdentityCollisions();
+		inline void SetGameLogicObject( void * src );
+		inline void * GetGameLogicObject();
+		PhysicModelStatic();
+		~PhysicModelStatic();
+	
+	TrianglePX:
+		inline void Calculate();
+		inline Vector ClosestPoint( Vector p );
+		inline void SetNormal( Vector src );
+		inline bool PointIn( Vector p );
+		inline bool PointIn( Vector p1, Vector p2 );
+		TrianglePX();
+		~TrianglePX();
+	
+	Collision:
+		inline bool RayTriangle( Vector p1, Vector p2, TrianglePX * tri );
+		inline unsigned int RayAABB( Vector p0, Vector p1, Vector * offset1, AABB * object );
+		inline unsigned int RayAABB( Vector p0, Vector p1, Vector * offset1, AABB * object, Vector * point );
+		inline unsigned int RayOBB( Vector p0, Vector p1, Vector * offset1, OBB * object );
+		inline unsigned int RaySphere( Vector p0, Vector p1, Vector * offset1, Sphere * object );
+		inline unsigned int RayModel( Vector p0, Vector p1, PhysicModelStatic * model );
+		inline unsigned int AABBTriangle( AABB * object, Vector * offset1, TrianglePX * tri, float time );
+		inline unsigned int OBBTriangle( OBB * object, Vector * offset1, TrianglePX * tri, float time );
+		inline unsigned int SphereTriangle( Sphere * object, Vector * offset1, TrianglePX * tri, float time );
+		inline unsigned int AABBAABB( AABB * object1, Vector * offset1, AABB * object2, Vector * offset2, float time );
+		inline unsigned int AABBOBB( AABB * object1, Vector * offset1, OBB * object2, Vector * offset2, float time );
+		inline unsigned int AABBSphere( AABB * object1, Vector * offset1, Sphere * object2, Vector * offset2, float time );
+		inline unsigned int OBBOBB( OBB * object1, Vector * offset1, OBB * object2, Vector * offset2, float time );
+		inline unsigned int OBBSphere( OBB * object1, Vector * offset1, Sphere * object2, Vector * offset2, float time );
+		inline unsigned int SphereSphere( Sphere * object1, Vector * offset1, Sphere * object2, Vector * offset2, float time );
+		inline unsigned int ModelTriangle( PhysicModelStatic * model, TrianglePX * tri, float time );
+		inline unsigned int ModelAABB( PhysicModelStatic * model, AABB * object, Vector * offset2, float time );
+		inline unsigned int ModelOBB( PhysicModelStatic * model, OBB * object, Vector * offset2, float time );
+		inline unsigned int ModelSphere( PhysicModelStatic * model, Sphere * object, Vector * offset2, float time );
+		inline unsigned int ModelModel( PhysicModelStatic * model1, PhysicModelStatic * model2, float time );
+	
+	ColliderTerrain:
+		inline void Clear();
+		ColliderTerrain();
+		~ColliderTerrain();
+	
+	ColliderObjects:
+		inline void Clear();
+		ColliderObjects();
+		~ColliderObjects();
+	
+	Map:
+		inline void UpdateForces( float FrameTime );
+		inline void UpdateObjectsCollisions( float FrameTime, int begin, int end );
+		inline void UpdateAllObjectsCollisions( float FrameTime );
+		inline void UpdateObjectColliders();
+		inline void UpdateTerrainColliders();
+		inline void Update( float FrameTime );
+		inline void Draw( float FrameTime );
+		inline int  SegmentCollision( Vector p1, Vector p2, PhysicModelStatic ** object, TrianglePX ** triangle, PhysicModelStatic * decludingobject );
+		inline bool SegmentCollideObject( Vector begin, Vector end, PhysicModelStatic ** object, PhysicModelStatic * decludingobject );
+		inline void DestroyColliders();
+		Map();
+		~Map();
+	
+	OneSample:
+		OneSample();
+		~OneSample();
+	
+	SoundSampleSources:
+		inline void SetName( char * src );
+		SoundSampleSources();
+		~SoundSampleSources();
+	
+	SoundEngine:
+		inline void Init();
+		inline void DeInit();
+		inline void AddSound( char * src );		// file name with path
+		inline void PlaySound( float volume, char * src );	// file name without path and expansion
+		inline void PlaySound( float volume, char * src, Vector origin );
+		inline void PlaySound( float volume, char * src, Vector origin, float range );
+		inline void Update();
+		SoundEngine();
+		~SoundEngine();
+	
+	Engine:
+		private: void CollisionLoop( int id );
+		private: void Renderer();
+		private: void PhysicLoop();
+		private: void Reshape( int width, int height );
+		private: void FrameFunction( int arg );
+		private: void CheckEngineThreadsInfoPhysicThread();
+		private: void CheckEngineThreadsInfoRendererThread();
+		inline int SegmentCollision( Vector p1, Vector p2, PhysicModelStatic ** object, TrianglePX ** triangle, PhysicModelStatic * decludingobject );
+		inline StaticGraphicModel * GetStaticModelHandle( char * src );
+		inline int AddGraphicModel( char * name, char * texture, Vector scale, int type );
+		inline void Init( int * argc, char **argv );
+		inline void BeginLoop();
+		inline void AddSoundSource( char * src );
+		inline void PlaySound( float volume, char * src );
+		inline void PlaySound( float volume, char * src, Vector origin );
+		inline void PlaySound( float volume, char * src, Vector origin, float range );
+		inline void PauseAll();
+		inline void ContinueAll();
+		inline void UpdateWorld();
+		inline void SetKeybordFunction( FunctionVoidFloat src );
+		inline void SetGUIFunction( FunctionVoidFloat src );
+		inline void GenerateVBOs();
+		inline int AddVBO( char * texturesrc, int texturtype );
+		inline void SetLightningLimit( int size );
+		inline void AddVertexToLastVBO( float x, float y, float z, float uvx, float uvy );
+		inline void CreateTriangleWithLastThreeVertices();
+		inline void AddPhysicTriangle( Vector a, Vector b, Vector c, Vector normal );
+		inline void AddObject();
+		inline void AddObjects( int number );
+		inline void DestroyWorld();
+		inline PhysicModelStatic * Object( int id );
+		inline unsigned int ObjectsNumber();
+		inline void AddLightning( Vector begin_, Vector end_, float beginWidth_, float EndWidth_, float r1_, float g1_, float b1_, float r2_, float g2_, float b2_, int segments_, float branch_, float branchDensity_, float beginTime, float endTime );
+		Engine();
+		~Engine();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

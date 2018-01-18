@@ -1,0 +1,9 @@
+S3DGL - Slow 3 Dimention Graphic Library
+
+Alpha 0.11
+
+Work on GPU
+
+Using Vector.hpp
+Using VMatrix.h
+Using VMatrix.cpp

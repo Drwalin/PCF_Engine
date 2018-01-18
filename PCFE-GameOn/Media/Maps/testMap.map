@@ -1,0 +1,198 @@
+GraphicMap ..\Media\StaticModels\testmap.obj
+PhysicsMap ..\Media\StaticModels\testmap.obj
+
+
+object player
+{
+	pos -5 5 -5
+	vel 0 0 0
+	mass 75
+	size 0.6 1.75 0.6
+	look 0 0
+	model NULL
+	modelScale 1
+	rayCollision 1
+	rayCollision 2
+	rayCollision 3
+	hp 100
+	maxHp 100
+	energy 0
+	maxEnergy 100
+	weapon 0 1
+	weapon 1 0
+	weapon 2 1
+	weapon 3 1
+	weapon 4 0
+	weapon 5 0
+	ammo 0 0
+	ammo 1 0
+	ammo 2 250
+	ammo 3 250
+	ammo 4 250
+	ammo 5 250
+	ammoLoaded 0 0
+	ammoLoaded 1 0
+	ammoLoaded 2 18
+	ammoLoaded 3 45
+	ammoLoaded 4 1
+	ammoLoaded 5 1
+	weaponEquiped 2
+	handRange 2.5
+	team 1
+}
+
+object bot
+{
+	pos -5 5 -5
+	vel 0 0 0
+	mass 75
+	size 0.6 1.75 0.6
+	look 0 0
+	model Glock311
+	modelScale 6.9
+	rayCollision 1
+	rayCollision 2
+	rayCollision 3
+	hp 100
+	maxHp 100
+	energy 0
+	maxEnergy 100
+	weapon 0 1
+	weapon 1 0
+	weapon 2 1
+	weapon 3 1
+	weapon 4 0
+	weapon 5 0
+	ammo 0 0
+	ammo 1 0
+	ammo 2 250
+	ammo 3 250
+	ammo 4 250
+	ammo 5 250
+	ammoLoaded 0 0
+	ammoLoaded 1 0
+	ammoLoaded 2 18
+	ammoLoaded 3 45
+	ammoLoaded 4 1
+	ammoLoaded 5 1
+	weaponEquiped 2
+	handRange 2.5
+	team 1
+}
+
+object bot
+{
+	pos -5 5 -5
+	vel 0 0 0
+	mass 75
+	size 0.6 1.75 0.6
+	look 0 0
+	model Glock311
+	modelScale 6.9
+	rayCollision 1
+	rayCollision 2
+	rayCollision 3
+	hp 100
+	maxHp 100
+	energy 0
+	maxEnergy 100
+	weapon 0 1
+	weapon 1 0
+	weapon 2 1
+	weapon 3 1
+	weapon 4 0
+	weapon 5 0
+	ammo 0 0
+	ammo 1 0
+	ammo 2 250
+	ammo 3 250
+	ammo 4 250
+	ammo 5 250
+	ammoLoaded 0 0
+	ammoLoaded 1 0
+	ammoLoaded 2 18
+	ammoLoaded 3 45
+	ammoLoaded 4 1
+	ammoLoaded 5 1
+	weaponEquiped 2
+	handRange 2.5
+	team 1
+}
+
+object bot
+{
+	pos -5 5 -5
+	vel 0 0 0
+	mass 75
+	size 0.6 1.75 0.6
+	look 0 0
+	model Glock311
+	modelScale 6.9
+	rayCollision 1
+	rayCollision 2
+	rayCollision 3
+	hp 100
+	maxHp 100
+	energy 0
+	maxEnergy 100
+	weapon 0 1
+	weapon 1 0
+	weapon 2 1
+	weapon 3 1
+	weapon 4 0
+	weapon 5 0
+	ammo 0 0
+	ammo 1 0
+	ammo 2 250
+	ammo 3 250
+	ammo 4 250
+	ammo 5 250
+	ammoLoaded 0 0
+	ammoLoaded 1 0
+	ammoLoaded 2 18
+	ammoLoaded 3 45
+	ammoLoaded 4 1
+	ammoLoaded 5 1
+	weaponEquiped 2
+	handRange 2.5
+	team 1
+}
+
+object bot
+{
+	pos -5 5 -5
+	vel 0 0 0
+	mass 75
+	size 0.6 1.75 0.6
+	look 0 0
+	model Glock311
+	modelScale 6.9
+	rayCollision 1
+	rayCollision 2
+	rayCollision 3
+	hp 100
+	maxHp 100
+	energy 0
+	maxEnergy 100
+	weapon 0 1
+	weapon 1 0
+	weapon 2 1
+	weapon 3 1
+	weapon 4 0
+	weapon 5 0
+	ammo 0 0
+	ammo 1 0
+	ammo 2 250
+	ammo 3 250
+	ammo 4 250
+	ammo 5 250
+	ammoLoaded 0 0
+	ammoLoaded 1 0
+	ammoLoaded 2 18
+	ammoLoaded 3 45
+	ammoLoaded 4 1
+	ammoLoaded 5 1
+	weaponEquiped 2
+	handRange 2.5
+	team 1
+}

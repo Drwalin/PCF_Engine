@@ -1,0 +1,1 @@
+c:\dev-cpp\bin\g++ -c ..\..\PCF-CuboidMatrixWall-Cuboid\CWbMTE-Beta-0.1j\Engine.cpp -DGLUT_STATIC -DALLEGRO_STATICLINK -O3 -o Engine.o

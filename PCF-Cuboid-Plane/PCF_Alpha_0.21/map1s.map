@@ -1,0 +1,21 @@
+A
+
+
+o a possition 100.0 5.0 100.0 lenght 0.6 height_legs 0.8 height_chest 0.52 height_head 0.33 mass 75.0 type 0 id 0 graphic_model_id 0 name GordonFreeman
+
+
+T vertex_1 98.0 0.0 102.0 vertex_2 102.0 0.0 102.0 vertex_3 102.0 -10.0 102.0 image_vertex_1 0.0 0.0 image_vertex_2 1.0 0.0 image_vertex_3 1.0 1.0 id_textury 1
+T vertex_1 98.0 0.0 102.0 vertex_2 98.0 -10.0 102.0 vertex_3 102.0 -10.0 102.0 image_vertex_1 0.0 0.0 image_vertex_2 1.0 0.0 image_vertex_3 1.0 1.0 id_textury 1
+
+T vertex_1 98.0 0.0 106.0 vertex_2 102.0 0.0 106.0 vertex_3 102.0 0.0 110.0 image_vertex_1 0.0 0.0 image_vertex_2 1.0 0.0 image_vertex_3 1.0 1.0 id_textury 1
+T vertex_1 98.0 0.0 106.0 vertex_2 98.0 0.0 110.0 vertex_3 102.0 0.0 110.0 image_vertex_1 0.0 0.0 image_vertex_2 1.0 0.0 image_vertex_3 1.0 1.0 id_textury 1
+
+
+
+T vertex_1 98.0 0.0 98.0 vertex_2 102.0 0.0 98.0 vertex_3 102.0 0.0 102.0 image_vertex_1 0.0 0.0 image_vertex_2 1.0 0.0 image_vertex_3 1.0 1.0 id_textury 1
+T vertex_1 98.0 0.0 98.0 vertex_2 98.0 0.0 102.0 vertex_3 102.0 0.0 102.0 image_vertex_1 0.0 0.0 image_vertex_2 1.0 0.0 image_vertex_3 1.0 1.0 id_textury 1
+
+T vertex_1 98.0 0.0 106.0 vertex_2 102.0 0.0 106.0 vertex_3 102.0 0.0 110.0 image_vertex_1 0.0 0.0 image_vertex_2 1.0 0.0 image_vertex_3 1.0 1.0 id_textury 1
+T vertex_1 98.0 0.0 106.0 vertex_2 98.0 0.0 110.0 vertex_3 102.0 0.0 110.0 image_vertex_1 0.0 0.0 image_vertex_2 1.0 0.0 image_vertex_3 1.0 1.0 id_textury 1
+
+s
