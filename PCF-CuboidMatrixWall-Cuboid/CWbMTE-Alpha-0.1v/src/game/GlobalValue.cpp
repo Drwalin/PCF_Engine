@@ -1,6 +1,0 @@
-
-
-
-Game * GameInstantiation = NULL;
-
-

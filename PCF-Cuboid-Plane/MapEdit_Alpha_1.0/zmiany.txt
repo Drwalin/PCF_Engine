@@ -1,3 +1,0 @@
-
-Alpha 1.0:
-	-obs³uga map do wrsji ENGINE_Alpha_1.3b_06
