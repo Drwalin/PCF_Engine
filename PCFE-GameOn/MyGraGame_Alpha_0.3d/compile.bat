@@ -1,1 +1,1 @@
-C:\Dev-Cpp_v5.7.1\Dev-Cpp\MinGW64\bin\g++.exe main.cpp -lglut32 -lglu32 -lopengl32 -lwinmm -lgdi32 -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lole32 -ldinput -lddraw -ldxguid -lwinmm -ldsound -lshlwapi -lirrKlang -DGLUT_STATIC -m32 -Ofast -s -o MyGraGame.exe
+C:\Dev-Cpp_v5.7.1\Dev-Cpp\MinGW64\bin\g++.exe main.cpp -lglut32 -lglu32 -lopengl32 -lwinmm -lgdi32 -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lole32 -ldinput -lddraw -ldxguid -lwinmm -ldsound -lshlwapi -lirrKlang -DGLUT_STATIC -m32 -Ofast -s -o MyGraGame.exe -w

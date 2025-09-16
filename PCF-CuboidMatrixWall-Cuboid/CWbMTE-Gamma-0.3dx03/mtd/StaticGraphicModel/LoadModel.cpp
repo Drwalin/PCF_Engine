@@ -83,7 +83,8 @@ inline int StaticGraphicModel::LoadModel( char * src )
 		for( i = 0; i < strlen(src); ++i )
 		{
 			src_[i] = src[i];
-		}src_[i] = 0;
+		}
+		src_[i] = 0;
 		for( i = 0; i < l; ++i )
 		{
 			if( src[i] == '\\' || src[i] == '/' )

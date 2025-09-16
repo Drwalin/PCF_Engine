@@ -1,7 +1,6 @@
 GraphicMap ..\Media\StaticModels\testmap.obj
 PhysicsMap ..\Media\StaticModels\testmap.obj
 
-
 object player
 {
 	pos -5 5 -5
